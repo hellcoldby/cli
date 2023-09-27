@@ -1,11 +1,14 @@
 
+## 自定义脚手架的命令
+- package.json 的 ``` "vz-cli":"bin/cli.js"``` 配置为命令起始。
+
 ## 自定义脚手架的搭建
 
 
 - 配置说明： <>表示必填项，[ ] 表示选填项
 
 ``` 
-zu create <project-name> [options]  //创建一个项目
+vz-cli create <project-name> [options]  //创建一个项目
 
 [options]
 -f,--force // 强制创建项目
