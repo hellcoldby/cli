@@ -6,6 +6,9 @@ const pkg = require('../package.json');
 // package.json中设置了type:module ,采用nodejs模块化的方式引入
 const cmd = require('commander');
 
+// 引入自动创建脚本
+const create = require('../lib/checkDir.js');
+
 // console.log('hello world');
 // 1.创建项目
 cmd
@@ -13,8 +16,9 @@ cmd
     .command('create <project-name>')
     .description('create a new project')
     .option('-f, --force', 'overwrite target directory if it exists')
-    .action((name, option)=>{
-        console.log('----',name, option);
+    .action((name, options)=>{
+        console.log('----',name, options);
+        create(name, options);
     });
 
 // // 2. 配置
