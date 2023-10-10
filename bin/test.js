@@ -15,11 +15,20 @@
 //   });
   
 
-const { resolve } = require('path');
-const { existsSync } = require('fs');
-const version = process.env.CLI_BIN || '1.0.0';
+// const { resolve } = require('path');
+// const { existsSync } = require('fs');
+// const version = process.env.CLI_BIN || '1.0.0';
 
-const CLI_BIN = resolve(__dirname, process.platform, version, 'cli-bin');
-console.log(CLI_BIN);
+// const CLI_BIN = resolve(__dirname, process.platform, version, 'cli-bin');
+// console.log(CLI_BIN);
 
-process.exit(1);
+// process.exit(1);
+
+const fs = require('fs');
+
+fs.readFile('./123.txt', (err, data)=>{
+    if(err) {console.log(err); return};
+
+    // const con = data.toString('utf-8');
+    console.log(data);
+})

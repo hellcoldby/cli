@@ -1,12 +1,19 @@
 {
-    "name": "aaa/aaa",
+    "name": "aaa",
     "version": "1.0.4",
     "description": "aaa",
     "author": {
       "name": "aaa",
-      "email": ""
+      "email": "aaa"
     },
-    "license": "MIT",
+    "license": "a",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "build:test": "tsc && vite build -m test",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview"
+      },
     "dependencies": {
       "less": "^4.2.0",
       "react": "^18.2.0",
