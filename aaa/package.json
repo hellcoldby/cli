@@ -1,10 +1,10 @@
 {
-    "name": "aaa/aaa",
+    "name": "test/aaa",
     "version": "1.0.4",
-    "description": "",
+    "description": "test",
     "author": {
-      "name": "",
-      "email": ""
+      "name": "me",
+      "email": "xxx@email.com"
     },
     "license": "MIT",
     "scripts": {
