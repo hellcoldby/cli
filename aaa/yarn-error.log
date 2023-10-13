@@ -1,0 +1,61 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe D:\Program Files\Yarn\bin\yarn.js add yo -g
+
+PATH: 
+  D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\bin;C:\Users\Administrator\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\Program Files\nodejs;C:\Program Files\dotnet;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\Yarn\bin;D:\Program Files\MongoDB\Server\6.0\bin;D:\Program Files\MongoDB\mongosh-1.10.5-win32-x64\bin;D:\Program Files\Git\cmd;C:\Program Files\Calibre2;C:\ProgramData\chocolatey\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\user\Desktop\personal\vite-zustand\aaa\node_modules\@esbuild\win32-x64\esbuild.exe'
+
+npm manifest: 
+  {
+      "name": "test-aaa",
+      "version": "1.0.4",
+      "description": "test",
+      "author": {
+        "name": "me",
+        "email": "xxx@email.com"
+      },
+      "license": "MIT",
+      "scripts": {
+          "dev": "vite --mode dev",
+          "build": "tsc && vite build",
+          "build:test": "tsc && vite build -m test",
+          "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+          "preview": "vite preview"
+        },
+      "dependencies": {
+        "less": "^4.2.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.15.0",
+        "umi-request": "^1.4.0"
+      },
+      "devDependencies": {
+        "@types/react": "^18.2.15",
+        "@types/react-dom": "^18.2.7",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0",
+        "@vitejs/plugin-react-swc": "^3.3.2",
+        "eslint": "^8.45.0",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.3",
+        "typescript": "^5.0.2",
+        "vite": "^4.4.5"
+      }
+    }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
